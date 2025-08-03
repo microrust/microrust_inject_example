@@ -1,6 +1,10 @@
 [package]
 name = "microrust_inject_example"
 version = "0.0.0-alpha.0"
+authors = ["Steve Schneider"]
+license = "Apache-2.0"
+description = "MicroRust Dependency Injection Example"
+readme = false
 edition = "2024"
 resolver = "2"
 
