@@ -486,9 +486,9 @@ checksum = "32a282da65faaf38286cf3be983213fcf1d2e2a58700e808f83f4ea9a4804bc0"
 
 [[package]]
 name = "microrust_inject"
-version = "0.0.0-alpha.0"
+version = "0.0.0-alpha.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "178f6ffbe04ac7c00631669465e8280387157ad5c70e685962a48f2bc1ed12ec"
+checksum = "5310d3f188cd0db32642b088803f375c9aeff2448d97b27729fca95af7428381"
 dependencies = [
  "crosstrait",
  "ctor",
@@ -498,7 +498,7 @@ dependencies = [
 
 [[package]]
 name = "microrust_inject_example"
-version = "0.0.0-alpha.0"
+version = "0.0.0-alpha.3"
 dependencies = [
  "async-std",
  "async-trait",
