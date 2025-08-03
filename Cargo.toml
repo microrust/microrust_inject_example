@@ -1,0 +1,12 @@
+[package]
+name = "microrust_inject_example"
+version = "0.0.0-alpha.0"
+edition = "2024"
+resolver = "2"
+
+[dependencies]
+microrust_inject = { path = "../microrust/inject" }
+
+[dev-dependencies]
+async-std = { version = "1.13", features = ["attributes"] }
+async-trait = "0.1"
