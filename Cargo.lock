@@ -487,6 +487,8 @@ checksum = "32a282da65faaf38286cf3be983213fcf1d2e2a58700e808f83f4ea9a4804bc0"
 [[package]]
 name = "microrust_inject"
 version = "0.0.0-alpha.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "178f6ffbe04ac7c00631669465e8280387157ad5c70e685962a48f2bc1ed12ec"
 dependencies = [
  "crosstrait",
  "ctor",
@@ -506,6 +508,8 @@ dependencies = [
 [[package]]
 name = "microrust_inject_macros"
 version = "0.0.0-alpha.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "520fb32e02cd1e7129a6f99c68989b5645fc63c97e483d00d29919b037af45e8"
 dependencies = [
  "proc-macro2",
  "quote",
