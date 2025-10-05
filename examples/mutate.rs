@@ -49,7 +49,7 @@ trait MyTraitOuterRwLock: Send + Sync {
 #[inject_singleton(new)]
 impl MyStructInnerMutex {
     pub fn new() -> Self {
-        println!("MyStructInnerMutex:new() called");
+        println!("MyStructInnerMutex::new() called");
         Self {
             counter: Mutex::new(0),
         }
@@ -68,7 +68,7 @@ impl MyStructInnerMutex {
 #[inject_singleton(new)]
 impl MyStructInnerRwLock {
     pub fn new() -> Self {
-        println!("MyStructInnerRwLock:new() called");
+        println!("MyStructInnerRwLock::new() called");
         Self {
             counter: RwLock::new(0),
         }
@@ -87,7 +87,7 @@ impl MyStructInnerRwLock {
 #[inject_singleton_mutex(new)]
 impl MyStructOuterMutex {
     pub fn new() -> Self {
-        println!("MyStructOuterMutex:new() called");
+        println!("MyStructOuterMutex::new() called");
         Self { counter: 0 }
     }
 
@@ -103,7 +103,7 @@ impl MyStructOuterMutex {
 #[inject_singleton_rwlock(new)]
 impl MyStructOuterRwLock {
     pub fn new() -> Self {
-        println!("MyStructOuterRwLock:new() called");
+        println!("MyStructOuterRwLock::new() called");
         Self { counter: 0 }
     }
 
@@ -150,6 +150,7 @@ impl MyTraitOuterMutex for MyStructOuterMutex {
         self.counter += 1;
     }
 }
+
 
 #[inject_trait_rwlock]
 impl MyTraitOuterRwLock for MyStructOuterRwLock {

@@ -10,8 +10,16 @@ resolver = "2"
 
 [dependencies]
 # microrust_inject = { path = "../microrust/inject" }
-microrust_inject = "0.0.0-alpha.1"
+microrust_inject = "0.0.0-alpha.4"
 
 [dev-dependencies]
 async-std = { version = "1.13", features = ["attributes"] }
 async-trait = "0.1"
+
+[profile.release]
+codegen-units = 1
+debug = false
+incremental = false
+lto = "fat"
+opt-level = "z"
+strip = true

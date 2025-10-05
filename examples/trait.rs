@@ -11,7 +11,7 @@ trait MyTrait: Send + Sync {
 #[inject_singleton(new)]
 impl MyStruct {
     pub fn new() -> Self {
-        println!("MyStruct:new() called");
+        println!("MyStruct::new() called");
         Self {}
     }
 }
@@ -19,7 +19,7 @@ impl MyStruct {
 #[inject_trait]
 impl MyTrait for MyStruct {
     async fn print(&self) {
-        println!("Hello, MyStruct");
+        println!("Hello, MyTrait for MyStruct");
     }
 }
 

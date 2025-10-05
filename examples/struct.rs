@@ -5,7 +5,7 @@ struct MyStruct {}
 #[inject_singleton(new)]
 impl MyStruct {
     pub fn new() -> Self {
-        println!("MyStruct:new() called");
+        println!("MyStruct::new() called");
         Self {}
     }
 
