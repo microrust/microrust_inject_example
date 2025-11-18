@@ -133,3 +133,10 @@ need_stdout = true
 allow_warnings = true
 on_success = "scroll-to-bottom"
 # on_failure = "scroll-to-bottom"
+
+[jobs.complex]
+command = ["cargo", "run", "--example", "complex"]
+need_stdout = true
+allow_warnings = true
+on_success = "scroll-to-bottom"
+# on_failure = "scroll-to-bottom"
