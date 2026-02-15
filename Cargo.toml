@@ -1,6 +1,6 @@
 [package]
 name = "microrust_inject_example"
-version = "0.0.0-alpha.3"
+version = "0.0.0-alpha.6"
 authors = ["Steve Schneider"]
 license = "Apache-2.0"
 description = "MicroRust Dependency Injection Example"
@@ -9,9 +9,8 @@ edition = "2024"
 resolver = "2"
 
 [dependencies]
-microrust = { version = "0.0.0-alpha.4", path = "../microrust/microrust" }
-# microrust_inject = { path = "../microrust/inject" }
-# microrust_inject = "0.0.0-alpha.4"
+microrust = "0.0.0-alpha.6"
+# microrust = { version = "0.0.0-alpha.6", path = "../microrust/microrust" }
 
 [dev-dependencies]
 async-std = { version = "1.13.2", features = ["attributes"] }
