@@ -1,6 +1,6 @@
 use std::sync::Arc;
 
-use microrust_inject::{get_instance, singleton};
+use microrust::inject::{get_instance, singleton};
 
 struct MyStruct {}
 

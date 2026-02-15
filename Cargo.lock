@@ -43,9 +43,9 @@ dependencies = [
 
 [[package]]
 name = "async-executor"
-version = "1.13.3"
+version = "1.14.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "497c00e0fd83a72a79a39fcbd8e3e2f055d6f6c7e025f3b3d91f4f8e76527fb8"
+checksum = "c96bf972d85afc50bf5ab8fe2d54d1586b4e0b46c97c50a0c9e71e2f7bcd812a"
 dependencies = [
  "async-task",
  "concurrent-queue",
@@ -572,6 +572,13 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f8ca58f447f06ed17d5fc4043ce1b10dd205e060fb3ce5b979b8ed8e59ff3f79"
 
 [[package]]
+name = "microrust"
+version = "0.0.0-alpha.4"
+dependencies = [
+ "microrust_inject",
+]
+
+[[package]]
 name = "microrust_inject"
 version = "0.0.0-alpha.4"
 dependencies = [
@@ -587,7 +594,7 @@ version = "0.0.0-alpha.3"
 dependencies = [
  "async-std",
  "async-trait",
- "microrust_inject",
+ "microrust",
 ]
 
 [[package]]

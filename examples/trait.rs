@@ -1,5 +1,5 @@
 use async_trait::async_trait;
-use microrust_inject::{get_trait_instance, inject_trait, singleton};
+use microrust::inject::{get_trait_instance, inject_trait, singleton};
 
 struct MyStruct {}
 

@@ -1,5 +1,5 @@
 use async_trait::async_trait;
-use microrust_inject::{
+use microrust::inject::{
     get_instance_mutex, get_instance_rwlock, get_trait_instance_mutex, get_trait_instance_rwlock,
     inject_trait_mutex, inject_trait_rwlock, singleton_mutex, singleton_rwlock,
 };
