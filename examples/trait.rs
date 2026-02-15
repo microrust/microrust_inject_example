@@ -1,5 +1,5 @@
 use async_trait::async_trait;
-use microrust_inject::{get_trait_instance, inject_singleton, inject_trait};
+use microrust_inject::{get_trait_instance, inject_trait, singleton};
 
 struct MyStruct {}
 
@@ -8,7 +8,7 @@ trait MyTrait: Send + Sync {
     async fn print(&self);
 }
 
-#[inject_singleton(new)]
+#[singleton(new)]
 impl MyStruct {
     pub fn new() -> Self {
         println!("MyStruct::new() called");

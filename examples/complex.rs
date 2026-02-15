@@ -1,6 +1,6 @@
 use std::sync::Arc;
 
-use microrust_inject::{get_instance, inject_singleton};
+use microrust_inject::{get_instance, singleton};
 
 struct MyStruct {}
 
@@ -8,7 +8,7 @@ struct MyStruct2 {
     ms: Arc<MyStruct>,
 }
 
-#[inject_singleton(new)]
+#[singleton(new)]
 impl MyStruct {
     pub fn new() -> Self {
         println!("MyStruct::new() called");
@@ -20,7 +20,7 @@ impl MyStruct {
     }
 }
 
-#[inject_singleton(new)]
+#[singleton(new)]
 impl MyStruct2 {
     pub fn new(ms: Arc<MyStruct>) -> Self {
         println!("MyStruct2::new() called");
